@@ -1,0 +1,129 @@
+
+<FTL>
+<mod:findName type="event" name="STORAGE_CHECK_COMIC_TULLY">
+  <mod:findLike type="text">
+    <mod:setValue>You open the comic to find a fairly accurate retelling of Tully's past. Starting from her birth in the Union, Tully leads an uneventful life within a small industrial mining colony to impoverished parents. Suddenly, she is thrust into the center of the new rising galactic conflict when Mantis invaders destroy her colony and kill everyone she loves, leading to her enlisting in the Union military to fight back against the Mantis threat.</mod:setValue>
+  </mod:findLike>
+  <mod:findLike type="choice">
+    <mod:findLike type="event">
+      <mod:findLike type="choice">
+        <mod:findLike type="event">
+          <mod:findLike type="text">
+            <mod:setValue>In the third comic Tully wanders lost throughout the frozen hellscape she is trapped on, saved only just in time by a small band of Mantis scientists taking refuge after having tried to escape the Hive themselves. She meets a young mantis named Tiifleeiiik, who she becomes good friends with, and learns the native Mantis language of Yeitiiik. At the end of the comic, Vance returns to the Federation front-lines and a search party is sent out for Tully, who returns to the Federation safely. This leads to one final assault on Tiet III, the heart of the Mantis war machine, where the Hive surrenders and the Federation is delcared the victor.</mod:setValue>
+          </mod:findLike>
+        </mod:findLike>
+      </mod:findLike>
+    </mod:findLike>
+  </mod:findLike>
+</mod:findName>
+
+<mod:findName type="event" name="STORAGE_CHECK_STATUS_CREW">
+  <mod:findLike type="choice">
+    <mod:selector req="ach_crew_unique_tully"/>
+    <mod:findLike type="event">
+      <mod:findLike type="text">
+        <mod:setValue>PROFILE: Jane Tully
+  			Title: Federation Admiral
+  			Species: Human - Age: 57 - Gender: Female
+
+  			Tully is a woman who lives up to her legend, if not more. Born to a penniless family of Union miners and orphaned by a Mantis attack, Tully has been serving in the Federation since the Federation first began. Maybe, if you survive this mission, Tully can sit you down and tell you some stories from her past. But for now, you have a Flagship ahead to prepare for and no time to lose.
+        </mod:setValue>
+      </mod:findLike>
+    </mod:findLike>
+  </mod:findLike>
+</mod:findName>
+
+<mod:findName type="textList" name="TEXT_CREW_TALK_TULLY">
+  <mod:findLike type="text" start="0" limit="1">
+    <mod:setValue>Tully is apprehensive of the final fight. She's only seen holographic images of the Flagship before, and she can hardly wait to witness its glory in person. And destroy it, too.</mod:setValue>
+  </mod:findLike>
+  <mod:findLike type="text" start="13" limit="1">
+    <mod:setValue>Tully misses the taste of chips, ever since she had to give them up as part of her training.</mod:setValue>
+  </mod:findLike>
+  <mod:findLike type="text" start="15" limit="1">
+    <mod:setValue>Though she was trained as a soldier, Tully wishes for galactic peace some day. She does however admit that's impossible and will never happen.</mod:setValue>
+  </mod:findLike>
+</mod:findName>
+</FTL>
+
+<FTL>
+<mod:findName type="event" name="COMBAT_CHECK_TOGGLE">
+  <mod-append:choice req="OFFENSE_COMBAT" lvl="1" max_group="308" blue="false">
+    <text>(Offense-Drone) Set the state of the drone. [Current mode: Combat]</text>
+    <event load="COMBAT_CHECK_OFFENSE_COMBAT"/>
+  </mod-append:choice>
+  <mod-append:choice req="OFFENSE_DEFENSE" lvl="1" max_group="309" blue="false">
+    <text>(Offfense-Drone) Set the state of the drone. [Current mode: Defense]</text>
+    <event load="COMBAT_CHECK_OFFENSE_DEFENSE"/>
+  </mod-append:choice>
+</mod:findName>
+
+<event name="COMBAT_CHECK_OFFENSE_COMBAT">
+	<text>Are you sure you want to change the drone's settings?</text>
+	<choice hidden="true">
+		<text>Set the drone to Defense Mode.</text>
+		<event>
+			<text>You start calibrating the drone...</text>
+			<remove name="OFFENSE_COMBAT"/>
+			<choice hidden="true">
+				<text>Continue...</text>
+				<event>
+					<text>You finish calibrating the drone successfully.</text>
+					<drone name="OFFENSE_DEFENSE"/>
+					<choice blue="false" req="loc_flagship" lvl="0" max_group="1">
+						<text>Continue...</text>
+						<event load="COMBAT_CHECK"/>
+					</choice>
+					<choice blue="false" req="loc_flagship" lvl="1" max_group="1">
+						<text>Continue...</text>
+						<event load="COMBAT_CHECK_FLAGSHIP"/>
+					</choice>
+				</event>
+			</choice>
+		</event>
+	</choice>
+	<choice blue="false" req="loc_flagship" lvl="0" max_group="1"  >
+		<text>Do something else instead.</text>
+		<event load="COMBAT_CHECK"/>
+	</choice>
+	<choice blue="false" req="loc_flagship" lvl="1" max_group="1">
+		<text>Do something else instead.</text>
+		<event load="COMBAT_CHECK_FLAGSHIP"/>
+	</choice>
+</event>
+
+<event name="COMBAT_CHECK_OFFENSE_DEFENSE">
+	<text>Are you sure you want to change the drone's settings?</text>
+	<choice hidden="true">
+		<text>Set the drone to Combat Mode.</text>
+		<event>
+			<text>You start calibrating the drone...</text>
+			<remove name="OFFENSE_DEFENSE"/>
+			<choice hidden="true">
+				<text>Continue...</text>
+				<event>
+					<text>You finish calibrating the drone successfully.</text>
+					<drone name="OFFENSE_COMBAT"/>
+					<choice blue="false" req="loc_flagship" lvl="0" max_group="1">
+						<text>Continue...</text>
+						<event load="COMBAT_CHECK"/>
+					</choice>
+					<choice blue="false" req="loc_flagship" lvl="1" max_group="1">
+						<text>Continue...</text>
+						<event load="COMBAT_CHECK_FLAGSHIP"/>
+					</choice>
+				</event>
+			</choice>
+		</event>
+	</choice>
+	<choice blue="false" req="loc_flagship" lvl="0" max_group="1"  >
+		<text>Do something else instead.</text>
+		<event load="COMBAT_CHECK"/>
+	</choice>
+	<choice blue="false" req="loc_flagship" lvl="1" max_group="1">
+		<text>Do something else instead.</text>
+		<event load="COMBAT_CHECK_FLAGSHIP"/>
+	</choice>
+</event>
+
+</FTL>

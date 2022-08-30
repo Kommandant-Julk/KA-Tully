@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<FTL>
+<mod:findName type="event" name="FED_MEMORIAL_WIN">
+	<mod:findLike type="choice">
+		<mod:findLike type="event">
+			<mod:findLike type="choice">
+				<mod:findLike type="event">
+					<mod:findLike type="text">
+						<mod:setValue>As you are leaving, Adara pulls you aside to tell you one last thing. "This package, it is extremely important that it arrives to Tully in time. I don't have time to bring it to her myself, but I know I can trust you with it. Godspeed, captain."</mod:setValue>
+					</mod:findLike>
+				</mod:findLike>
+			</mod:findLike>
+		</mod:findLike>
+	</mod:findLike>
+</mod:findName>
+</FTL>

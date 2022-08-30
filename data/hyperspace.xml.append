@@ -1,0 +1,21 @@
+<bossShip yOffset="70">MT_BOSS_KAKESTREL_NORMAL</bossShip>
+
+<mod:findLike type="ships">
+  <mod-append:customShip name="MT_BOSS_KAKESTREL_NORMAL">
+    <shipIcons>
+      <shipIcon>icon_threat</shipIcon>
+      <shipIcon>icon_specialwep</shipIcon>
+    </shipIcons>
+    <crew>
+      <human room="0" name="Jose"/> <!--pilot-->
+      <human room="15" name="Ricardo"/> <!--engines-->
+      <human room="10" name="Pavlo"/> <!--weapons-->
+      <human room="10" name="Cremity"/> <!--weapons?-->
+      <engi room="8" name="Manon"/> <!--shieds-->
+      <rock room="12" name="Charlie"/> <!--teleporter-->
+      <mantis room="12" name="Liam"/> <!--teleporter-->
+    </crew>
+    <noFuelStalemate/>
+  </mod-append:customShip>
+
+</mod:findLike>

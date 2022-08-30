@@ -1,0 +1,59 @@
+<ship name="SHIP_MTBOSS_KA_KESTREL_NORMAL" auto_blueprint="MT_BOSS_KAKESTREL_NORMAL">
+  <destroyed load="MTBOSS_KA_KESTREL_DESTROYED"/>
+	<deadCrew load="MTBOSS_KA_KESTREL_DEADCREW"/>
+</ship>
+
+<event name="MV_TRAVELER_BOSS_KA_KESTREL_NORMAL">
+	<text>From out of the tunnel comes a massive cruiser vessel, of an old Kestrel model! The the weapons look outdated but brand new at the same time, how strange.</text>
+	<ship load="SHIP_MTBOSS_KA_KESTREL_NORMAL" hostile="false"/>
+	<choice hidden="true">
+		<text>Continue...</text>
+		<event>
+			<text>but why?</text>
+			<ship hostile="true"/>
+			<choice hidden="true">
+				<text>Continue...</text>
+				<event load="COMBAT_CHECK"/>
+			</choice>
+		</event>
+	</choice>
+	<choice>
+		<text>Leave.</text>
+		<event>
+			<text>you leave.</text>
+		</event>
+	</choice>
+</event>
+
+
+<event name="MTBOSS_KA_KESTREL_DESTROYED">
+	<text>The mighty vessel has been eliminated! Within its wreckage remains plenty of scrap and supplies for the taking.</text>
+	<autoReward level="HIGH">standard</autoReward>
+	<choice hidden="true">
+		<text>Continue...</text>
+		<event load="MTBOSS_KA_KESTRELB_DROP_CHANCE"/>
+	</choice>
+</event>
+
+<eventList name="MTBOSS_KA_KESTRELB_DROP_CHANCE">
+	<event>
+		<text>You find the remains of a unique weapon model amongst the ruins of the ship, but it appears it did not survive the fight. You'll have to be more careful next time, or get lucky. Fortunately, there's still a bit more supplies to take with you.</text>
+		<autoReward level="LOW">stuff</autoReward>
+	</event>
+	<event load="MTBOSS_KA_KESTREL_DROP"/>
+</eventList>
+
+<event name="MTBOSS_KA_KESTREL_DEADCREW">
+	<text>The mighty vessel has been vanquished! Within the now cleared cruiser, plenty of scrap and supplies remain for the taking.</text>
+	<autoReward level="HIGH">standard</autoReward>
+	<choice hidden="true">
+		<text>Continue...</text>
+		<event load="MTBOSS_KA_KESTREL_DROP"/>
+	</choice>
+</event>
+
+<event name="MTBOSS_KA_KESTREL_DROP">
+	<text>You're also surprised to find a special weapon amongst the wreckage! You've never seen a weapon like this before, so you assume it's a custom model made by the renegades themselves.</text>
+	<autoReward level="LOW">stuff</autoReward>
+	<drone name="OFFENSE_COMBAT"/>
+</event>

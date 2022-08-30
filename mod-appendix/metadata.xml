@@ -1,0 +1,30 @@
+<metadata>
+  <title><![CDATA[ Kestrel Adventures Tully ]]></title>
+  <threadUrl><![CDATA[https://subsetgames.com/forum/viewtopic.php?f=11&t=38203&p=129173#p129173]]></threadUrl>
+  <author><![CDATA[ RoadTrain]]></author>
+  <version><![CDATA[ 1.2 ]]></version>
+  <description>
+<![CDATA[
+REQUIRES MULTIVERSE TO WORK
+This mod replaces the sprite/text for admiral Tully, turning them into a dark skinned female in line with their depiction in the YouTube series "Kestrel Adventures".
+Now compatible with MV 5.2.1 (should be compatible with later versions hopefully)
+
+Special thanks to:
+- Kommandant_Julk for removing all the clobbering.
+- MV devs for such a great mod and the Tully sprite
+
+Changelog:
+1.1
+- removed clobbering
+- reduced file size
+- now no longer breaks stuff (hopefully)
+
+1.2
+- now affects storage check and (hopefully) all other mentions of Tully's gender
+- miniship of tully crewser (that little picture in hangar that shows a tiny version of that ship) no longer displays vanilla Tully
+- changed all mentions of "Brodric Tully" to "Jane Tully"
+- now compatible with Forgemaster mod! (until more entry texts get added)
+
+]]>
+  </description>
+</metadata>
