@@ -1,6 +1,6 @@
 <mod:findName type="crewBlueprint" name="unique_tully">
 	<mod:findLike type="desc">
-		<mod:setValue>Yes, this is truly Admiral Tully of the Federation. She is trained in practically every skill you could ever learn.</mod:setValue>
+		<mod:setValue>Yes, this is truly Admiral Tully of the Federation. She is practically your most powerful ally.</mod:setValue>
 	</mod:findLike>
 </mod:findName>
 
