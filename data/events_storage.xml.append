@@ -19,7 +19,7 @@
 
 <mod:findName type="event" name="STORAGE_CHECK_STATUS_CREW">
   <mod:findLike type="choice">
-    <mod:selector req="ach_crew_unique_tully"/>
+    <mod:selector req="ach_crew_tully"/>
     <mod:findLike type="event">
       <mod:findLike type="text">
         <mod:setValue>PROFILE: Jane Tully
