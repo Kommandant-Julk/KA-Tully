@@ -1,0 +1,61 @@
+<mod:findName type="event" name="SOCIALIZE_TULLY_NOTHING">
+  <mod:findLike type="text">
+    <mod:setValue>Tully appears to be waiting in her cabin. "Sorry, don't have much to talk about. Maybe check in with some of the other crew?"</mod:setValue>
+  </mod:findLike>
+</mod:findName>
+
+<mod:findName type="event" name="SOCIALIZE_TULLY_GENERIC_1">
+  <mod:findLike type="text">
+    <mod:setValue>You find Tully polishing her blaster, whistling some song you've never heard before. "This? Oh, this is an old marching song back from the Federation-Mantis War. Of all the things that've stuck with me the most, it's funny to think it's the music. I guess the rest you just don't really want to remember, you know?"</mod:setValue>
+  </mod:findLike>
+</mod:findName>
+
+<mod:findName type="event" name="SOCIALIZE_TULLY_GENERIC_2">
+  <mod:findLike type="text">
+    <mod:setValue>You ask Tully if she has any lasting grudges on the Mantis after the Federation-Mantis. "The Mantis? Certainly not. My life was saved by a group of Mantis. The Hive's another story. But if you let yourself blame the wrong people for too long, you'll fall victim to your own spite. Just look at Vance - I can't ever let myself end up like him."</mod:setValue>
+  </mod:findLike>
+</mod:findName>
+
+<mod:findName type="event" name="SOCIALIZE_TULLY_GENERIC_4">
+  <mod:findLike type="text">
+    <mod:setValue>Tully walks past you in the hallway, and you give her a cursory nod. Tully blinks, scowls, and continues to walk away before she stops again.</mod:setValue>
+  </mod:findLike>
+</mod:findName>
+
+<mod:findName type="event" name="SOCIALIZE_TULLY_FREDDY_1">
+  <mod:findLike type="text">
+    <mod:setValue>You find Tully and Freddy chatting together idly, reminiscing about the Federation-Mantis War. "You know, I met a young Free Mantis during the war after I escaped from captivity. Funny thing is, I gave him a nickname. Freddy. Ain't that such a coincidence?" Freddy nods his head. "Oh, ain't that swell! What a coincidence indeed. You ever met him again after you were rescued by the Feds?" Tully shakes her head and Freddy frowns. "Oh, well that's just a shame. Maybe some day you'll meet him again?" Tully shrugs. "Maybe some day, just maybe..." Both wave to each other and walk away. You aren't sure if you should say something.</mod:setValue>
+  </mod:findLike>
+</mod:findName>
+
+<mod:findName type="event" name="SOCIALIZE_TULLY_TURZIL_1">
+  <mod:findLike type="text">
+    <mod:setValue>You spot Tully walking over to Turzil and staring at his arm plate. "Turzil, I've got to ask. Where'd the yellow come from? I swear the last time we spoke you were grey!"
+  "-Blushing-. Please, do [not] inquire. It is... embarassing. But... does it look bad? Perhaps I should remove it. Yes, I will do so."
+  Tully realizes her error and puts her palms on Turzil's shoulders. "No no, I didn't mean like that! It suits you, buddy! Some time you gotta teach me how to paint, alright?"
+  Turzil seems to shrink a bit. "Y-you want me to -teach- you how to paint? Together? Privately?"
+  Tully nods but seems a bit unsure. "Yeah? Not sure why you say it so weirdly... but yeah! But not now, we've got more important things to do."
+  "Yes. -Yes-. Of course. More important things. Of course..."</mod:setValue>
+  </mod:findLike>
+</mod:findName>
+
+<mod:findName type="event" name="SOCIALIZE_TULLY_ALKRAM_1">
+  <mod:findLike type="text">
+    <mod:setValue>You flick on the cameras to view the other ships and see what the crew are doing. You watch in the kitchen as Tully walks in to grab some food, followed several minutes later by Alkram. Both pause when they see each other, and Tully's hand inches closer to her rifle. The cameras experience some interference as Alkram begins to build a slow electric charge. The two stare at each other, both ready to draw, frozen in place. The standstill finally comes to an end when the microwave beeps, signifying Tully's pasta meal is ready. He sighs and abandons her gun, and Alkram calms down as well. Though no words are ever exchanged, they share a nod of mutual agreement and sit at opposite tables to eat.</mod:setValue>
+  </mod:findLike>
+</mod:findName>
+
+<mod:findName type="event" name="SOCIALIZE_TULLY_DEVORAK_1">
+  <mod:findLike type="text">
+    <mod:setValue>Devorak and Tully both cross paths in the hallways, and almost immediately Devorak starts to reach for his sword. Stretching his fingers, he begins to slide it out of his holster. Tully's eyes slant and she slides her hand towards her blaster.
+"Devorak."
+"Tully?"
+"Put the sword down."
+"The sword?"
+"Yes, the sword."
+Devorak blinks. "Oh, right. Sorry, sorry! I didn't meant to put you on edge! It all must be very confusing, but you must understand I am the sword!"
+"You're... what?"
+"I'm the sword!"
+"Okay... cool I guess? I can't say I understand, but it's good to see you again. I saw your speech. I don't know if the Federation would be inclined to forgive you for betraying them initially, but I for one am glad to have you back.</mod:setValue>
+  </mod:findLike>
+</mod:findName>

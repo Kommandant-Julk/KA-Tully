@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<FTL>
+<mod:findName type="event" name="SHOWDOWN_TULLY">
+	<mod:findLike type="text">
+		<mod:setValue>Vance pauses, and appears on the vid screen. Tully steps foward, arms crossed behind her back. "Wentworth. Please, listen to me, not as an adversary, but as your old friend. Don't do this. Think of what you're doing, is all of this really worth it? You'll kill trillions of people and for what? To settle some petty score? You've built an empire that can compete with the Federation - why can't you just be satisfied with that?"</mod:setValue>
+	</mod:findLike>
+	<mod:findLike type="choice">
+		<mod:findLike type="event">
+			<mod:findLike type="text">
+				<mod:setValue>Vance's glare softens, but the determined look on his face doesn't falter. "This is well beyond simple revenge, Jane. Have you never wondered why we still carry the title of Rebellion? Because it keeps our ideals and our mission true to the heart of every man who marches under our banner. To simply co-exist with the Federation is to willingly allow not only trillions but a near infinite pool of people continue to suffer."</mod:setValue>
+			</mod:findLike>
+			<mod:findLike type="choice">
+				<mod:findLike type="event">
+					<mod:findLike type="text">
+						<mod:setValue>"This multiverse will only know peace when the Federation has finally been dissolved and a new, glorious civilization can be built where the barbaric xeno-lifeforms can continue their malpractices in their own private suffering while humanity is allowed to prosper as we were always destined to do. The people of Universe 0 had their chance, but they have failed. It takes a person of diamond will to be able to commit to the lesser evil. I do not want to fight you, Jane, but don't think our history will stop me from fulfilling my purpose."</mod:setValue>
+					</mod:findLike>
+				</mod:findLike>
+			</mod:findLike>
+		</mod:findLike>
+	</mod:findLike>
+</mod:findName>
+
+</FTL>

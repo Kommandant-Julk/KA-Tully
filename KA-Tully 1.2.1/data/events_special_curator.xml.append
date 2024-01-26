@@ -1,0 +1,5 @@
+<mod:findName type="event" name="CURA_TORTURE_LORE">
+  <mod:findLike type="text">
+    <mod:setValue>"The Mantis seem to have described in... gruesome detail the kinds of torture they used on their victims. Mr. Wentworth was resilient, he persistently refused to surrender information on the Federation. In return, the Mantis... immolated certain regions of his body, rendering him impotent. It seems, had the break out attempt between him and Ms. Tully not been successfully staged, he would have soon lost his eyesight and tongue next. Vile."</mod:setValue>
+  </mod:findLike>
+</mod:findName>

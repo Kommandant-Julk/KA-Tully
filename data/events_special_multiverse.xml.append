@@ -53,7 +53,7 @@
 </event>
 
 <event name="MTBOSS_KA_KESTREL_DROP">
-	<text>You're also surprised to find a special weapon amongst the wreckage! You've never seen a weapon like this before, so you assume it's a custom model made by the renegades themselves.</text>
+	<text>You're also surprised to find a special drone amongst the wreckage! You've never seen a weapon like this before, so you assume it's a custom model made by the renegades themselves.</text>
 	<autoReward level="LOW">stuff</autoReward>
 	<drone name="OFFENSE_COMBAT"/>
 </event>

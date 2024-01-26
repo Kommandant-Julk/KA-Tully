@@ -1,0 +1,10 @@
+<FTL>
+<nameList race="human" sex="male">
+	<name>RoadTrain</name>
+	<name short="Andrew">Andrew Colunga</name>
+</nameList>
+
+<nameList race="human" sex="female">
+	<name>RoadTrain</name>
+</nameList>
+</FTL>

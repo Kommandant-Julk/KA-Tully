@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<FTL><!-- Copyright (c) 2012 by Subset Games. All rights reserved -->
+<mod:findName type="event" name="LAST_STAND_START_EXTREME_FINISH">
+	<mod:findLike type="text">
+		<mod:setValue>The MFK Ace has been taken care of, and you scrap the remains before carrying on. You contact the survivors of the Federation fleet, including Admiral Tully herself.</mod:setValue>
+	</mod:findLike>
+</mod:findName>
+<mod:findName type="event" name="TRUE_LAST_STAND_START">
+	<mod:findLike type="choice">
+		<mod:selector req="rep_general" lvl="0" max_lvl="7"/>
+		<mod:findLike type="event">
+			<mod:findLike type="choice">  <!--coalition-->
+				<mod:selector req="SHIP_COALITION"/>
+				<mod:findLike type="event">
+					<mod:findLike type="text">
+						<mod:setValue>On the vidscreen appears several Federation and Engi officers, as well as Admiral Tully in the center. She recoils in shock at the sight of your ship. "A Coalition vessel? This must be some joke... the only reason I can fathom receiving support from the Coalition would be our mutual enemy in the Rebellion. If so, then we can use all the help we can get, even from unlikely allies."</mod:setValue>
+					</mod:findLike>
+				</mod:findLike>
+			</mod:findLike>
+			<mod:findLike type="choice">  <!--lanius-->
+				<mod:selector req="SHIP_LANIUS"/>
+				<mod:findLike type="event">
+					<mod:findLike type="text">
+						<mod:setValue>On the vidscreen appears several Federation and Engi officers, as well as Admiral Tully in the center. She recoils in shock at the sight of your ship. "A Lanius warship, how interesting. I've never been certain of the Lanius's loyalties or motivation, but if you've come this far I have no doubt you've come to aid us in our fight."</mod:setValue>
+					</mod:findLike>
+				</mod:findLike>
+			</mod:findLike>
+			<mod:findLike type="choice">	<!--rebel-->
+				<mod:selector req="SHIP_REBEL"/>
+				<mod:findLike type="event">
+					<mod:findLike type="text">
+						<mod:setValue>On the vidscreen appears several Federation and Engi officers, as well as Admiral Tully in the center. She recoils in shock at the sight of your ship. "I never believed in a million years the ship who would be saving the Federation would be a Rebel vessel. I'm sure you have your reasons for betraying the Rebellion, and I'd love to hear them, but we have more pressing matters to deal with, such as the Flagship."</mod:setValue>
+					</mod:findLike>
+				</mod:findLike>
+			</mod:findLike>
+			<mod:findLike type="choice">	<!--auto/cura-->
+				<mod:selector req="SHIP_AUTO"/>
+				<mod:findLike type="event">
+					<mod:findLike type="text">
+						<mod:setValue>On the vidscreen appears several Federation and Engi officers, as well as Admiral Tully in the center. She takes a step back as she takes in your ship. "That W... um... I don't know what you are, or why Universe 0 hired an automated ship as a Renegade, but if whatever you are is the solution to our problem then... be my guest? But I'll be keeping my eye on you...</mod:setValue>
+					</mod:findLike>
+				</mod:findLike>
+			</mod:findLike>
+			<mod:findLike type="choice">	<!--limit-->
+				<mod:selector req="SHIP_LIMIT"/>
+				<mod:findLike type="event">
+					<mod:findLike type="text">
+						<mod:setValue>On the vidscreen appears several Federation and Engi officers, as well as Admiral Tully in the center. As soon as she sees your ship, she hangs up immediately, but reconnects not long after. "No. You can't be serious. They sent THIS ship to save us? Is this some sick stupid joke?" Tully sighs. "Well unfortunately, you're the Federation's last hope. Try not to throw it all away, okay? We're all counting on you now.</mod:setValue>
+					</mod:findLike>
+				</mod:findLike>
+			</mod:findLike>
+			<mod:findLike type="choice">	<!--pony-->
+				<mod:selector req="SHIP_PONY"/>
+				<mod:findLike type="event">
+					<mod:findLike type="text">
+						<mod:setValue>On the vidscreen appears several Federation and Engi officers, as well as Admiral Tully in the center. As soon as she sees your ship, she hangs up immediately, but reconnects not long after. "Horse? Horse friend!" Tully pauses and corrects her posture. "Er- sorry about that. I don't know what came over me. But, if you take down that Flagship, please let me pet a horse."</mod:setValue>
+					</mod:findLike>
+				</mod:findLike>
+			</mod:findLike>
+			<mod:findLike type="choice">  <!--gunbomination (forgemaster mod)-->
+				<mod:selector req="SHIP_GUNBOM"/>
+				<mod:findLike type="event">
+					<mod:findLike type="text">
+						<mod:setValue>On the vidscreen appears several Federation and Engi officers, as well as Admiral Tully in the center. Tully's eyes widen at the number of weapons mounted to your hull. One of the officers begins ordering Federation troops to grab all the reserve ammunition they have, but Tully raises a hand to silence them. "How....are you powering all those weapons?" She asks, an eyebrow raised.</mod:setValue>
+					</mod:findLike>
+					<mod:findLike type="choice">
+						<mod:findLike type="event">
+							<mod:findLike type="text">
+								<mod:setValue>Tully groans and covers her face in her hands for a moment, as if contemplating her life choices. Then looks back up at the vid screen. "...you're our last hope. I certainly hope you know what you are doing." </mod:setValue>
+							</mod:findLike>
+						</mod:findLike>
+					</mod:findLike>
+				</mod:findLike>
+			</mod:findLike>
+		</mod:findLike>
+	</mod:findLike>
+</mod:findName>
+
+
+<mod:findName type="event" name="LAST_STAND_START_2">
+	<mod:findLike type="choice">
+		<mod:selector req="TULLY_PRESENT"/>
+		<mod:findLike type="event">
+			<mod:findLike type="text">
+				<mod:setValue>As soon as Tully lays her eyes on the box, she changes her posture completely. She permits you inside the Federation command.</mod:setValue>
+			</mod:findLike>
+		</mod:findLike>
+	</mod:findLike>
+</mod:findName>
+
+</FTL>

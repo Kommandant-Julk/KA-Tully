@@ -17,27 +17,11 @@
 					</mod:findLike>
 				</mod:findLike>
 			</mod:findLike>
-			<mod:findLike type="choice">  <!--orchid-->
-				<mod:selector req="SHIP_ORCHID"/>
-				<mod:findLike type="event">
-					<mod:findLike type="text">
-						<mod:setValue>On the vidscreen appears several Federation and Engi officers, as well as Admiral Tully in the center. She recoils in shock at the sight of your ship. "Orchids, hmmm? I didn't think your kind would take it upon yourselves to assist in this battle. I'm grateful for the reinforcements, we're running thin on soldiers and ships and every ounce of help is worth millions."</mod:setValue>
-					</mod:findLike>
-				</mod:findLike>
-			</mod:findLike>
 			<mod:findLike type="choice">  <!--lanius-->
 				<mod:selector req="SHIP_LANIUS"/>
 				<mod:findLike type="event">
 					<mod:findLike type="text">
-						<mod:setValue>On the vidscreen appears several Federation and Engi officers, as well as Admiral Tully in the center. She recoils, in shock at the sight of your ship. "A Lanius warship, how interesting. I've never been certain of the Lanius's loyalties or motivation, but if you've come this far I have no doubt you've come to aid us in our fight."</mod:setValue>
-					</mod:findLike>
-				</mod:findLike>
-			</mod:findLike>
-			<mod:findLike type="choice">  <!--civilian-->
-				<mod:selector req="SHIP_CIVILIAN"/>
-				<mod:findLike type="event">
-					<mod:findLike type="text">
-						<mod:setValue>On the vidscreen appears several Federation and Engi officers, as well as Admiral Tully in the center. She recoils in shock at the sight of your ship. "I can't say I expected the ship that the Federation would have to bet their survival on to be operated by Civilians... Still, your loyalty to our cause is noted and we need all of the help we can get."</mod:setValue>
+						<mod:setValue>On the vidscreen appears several Federation and Engi officers, as well as Admiral Tully in the center. She recoils in shock at the sight of your ship. "A Lanius warship, how interesting. I've never been certain of the Lanius's loyalties or motivation, but if you've come this far I have no doubt you've come to aid us in our fight."</mod:setValue>
 					</mod:findLike>
 				</mod:findLike>
 			</mod:findLike>
@@ -49,8 +33,8 @@
 					</mod:findLike>
 				</mod:findLike>
 			</mod:findLike>
-			<mod:findLike type="choice">	<!--cura-->
-				<mod:selector req="SHIP_CURA"/>
+			<mod:findLike type="choice">	<!--auto/cura-->
+				<mod:selector req="SHIP_AUTO"/>
 				<mod:findLike type="event">
 					<mod:findLike type="text">
 						<mod:setValue>On the vidscreen appears several Federation and Engi officers, as well as Admiral Tully in the center. She takes a step back as she takes in your ship. "That W... um... I don't know what you are, or why Universe 0 hired an automated ship as a Renegade, but if whatever you are is the solution to our problem then... be my guest? But I'll be keeping my eye on you...</mod:setValue>
@@ -69,7 +53,7 @@
 				<mod:selector req="SHIP_PONY"/>
 				<mod:findLike type="event">
 					<mod:findLike type="text">
-						<mod:setValue>>On the vidscreen appears several Federation and Engi officers, as well as Admiral Tully in the center. As soon as she sees your ship, she hangs up immediately, but reconnects not long after. "Horse? Horse friend!" Tully pauses and corrects her posture. "Er- sorry about that. I don't know what came over me. But, if you take down that Flagship, please let me pet a horse."</mod:setValue>
+						<mod:setValue>On the vidscreen appears several Federation and Engi officers, as well as Admiral Tully in the center. As soon as she sees your ship, she hangs up immediately, but reconnects not long after. "Horse? Horse friend!" Tully pauses and corrects her posture. "Er- sorry about that. I don't know what came over me. But, if you take down that Flagship, please let me pet a horse."</mod:setValue>
 					</mod:findLike>
 				</mod:findLike>
 			</mod:findLike>

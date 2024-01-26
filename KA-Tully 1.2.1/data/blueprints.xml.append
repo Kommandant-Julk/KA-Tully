@@ -1,0 +1,117 @@
+<mod:findName type="crewBlueprint" name="unique_tully">
+	<mod:findLike type="desc">
+		<mod:setValue>Yes, this is truly Admiral Tully of the Federation. She is practically your most powerful ally.</mod:setValue>
+	</mod:findLike>
+</mod:findName>
+
+<mod:findName type="shipBlueprint" name="CREW_SHIP_SLOT1_2">
+	<mod:findLike type="desc">
+		<mod:setValue>Tully was one of the first Federation captains to receive the finished Federation cruiser prototype, though the real powerhouse of this vessel is Tully herself.</mod:setValue>
+	</mod:findLike>
+</mod:findName>
+
+<droneBlueprint name="OFFENSE_COMBAT">
+	<type>COMBAT</type>
+	<tip>tip_toggle_amphi</tip>
+	<title>Offense-Drone [Combat]</title>
+	<short>Offense [C]</short>
+	<desc>[CURRENT MODE: Combat] A special toggle drone that can switch between Combat and Defense modes before combat.</desc>
+	<power>2</power>
+	<cooldown>100</cooldown>
+	<dodge>5</dodge>
+	<speed>20</speed>
+	<cost>60</cost>
+	<bp>3</bp>
+	<droneImage>drone_offense_c</droneImage>
+	<weaponBlueprint>DRONE_OFFENSE_COMBAT</weaponBlueprint>
+	<rarity>0</rarity>
+	<iconImage>combat</iconImage>
+</droneBlueprint>
+<droneBlueprint name="OFFENSE_DEFENSE">
+	<type>DEFENSE</type>
+	<level>1</level>
+	<tip>tip_toggle_amphi</tip>
+	<title>Offense-Drone [Defense]</title>
+	<short>Offense [D]</short>
+	<desc>
+		[CURRENT MODE: Defense] A special toggle drone that can switch between Combat and Defense modes before combat.
+		Reload: 300 MS
+	</desc>
+	<power>2</power>
+	<cooldown>300</cooldown>
+	<dodge>5</dodge>
+	<speed>10</speed>
+	<cost>60</cost>
+	<bp>2</bp>
+	<droneImage>drone_offense_d</droneImage>
+	<weaponBlueprint>DRONE_OFFENSE_DEFENSE</weaponBlueprint>
+	<iconImage>defense</iconImage>
+	<rarity>0</rarity>
+</droneBlueprint>
+
+<weaponBlueprint name="DRONE_OFFENSE_COMBAT">
+	<type>LASER</type>
+	<title>Drone Laser</title>
+	<speed>300</speed>
+	<damage>0</damage>
+	<sysDamage>2</sysDamage>
+	<persDamage>2</persDamage>
+	<power>0</power>
+	<shots>1</shots>
+	<sp>10</sp>
+	<fireChance>0</fireChance>
+	<breachChance>8</breachChance>
+	<rarity>0</rarity>
+	<image>pds</image>
+	<launchSounds>
+		<sound>lightLaser1</sound>
+		<sound>lightLaser2</sound>
+		<sound>lightLaser3</sound>
+	</launchSounds>
+	<hitShipSounds>
+		<sound>hitHull2</sound>
+		<sound>hitHull3</sound>
+	</hitShipSounds>
+	<hitShieldSounds>
+		<sound>hitShield1</sound>
+		<sound>hitShield2</sound>
+		<sound>hitShield3</sound>
+	</hitShieldSounds>
+	<missSounds>
+		<sound>miss</sound>
+	</missSounds>
+	<weaponArt>laser_burst_1</weaponArt>
+</weaponBlueprint>
+
+<weaponBlueprint name="DRONE_OFFENSE_DEFENSE">
+<type>LASER</type>
+<title>Drone Laser</title>
+<speed>300</speed>
+<power>0</power>
+<damage>1</damage>
+<sysDamage>2</sysDamage>
+<persDamage>2</persDamage>
+<shots>1</shots>
+<fireChance>0</fireChance>
+<breachChance>8</breachChance>
+<rarity>0</rarity>
+<image>pds</image>
+<launchSounds>
+	<sound>lightLaser1</sound>
+	<sound>lightLaser2</sound>
+	<sound>lightLaser3</sound>
+</launchSounds>
+<hitShipSounds>
+	<sound>hitHull2</sound>
+	<sound>hitHull3</sound>
+</hitShipSounds>
+<hitShieldSounds>
+	<sound>hitShield1</sound>
+	<sound>hitShield2</sound>
+	<sound>hitShield3</sound>
+</hitShieldSounds>
+<missSounds>
+	<sound>miss</sound>
+</missSounds>
+<weaponArt>laser_burst_1</weaponArt>
+</weaponBlueprint>
